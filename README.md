@@ -87,7 +87,7 @@
 - ✅ Optimized attention mechanisms for DirectML
 - ✅ Pre-configured virtual environment with all dependencies
 
-## � Recommended Settings
+##  Recommended Settings
 
 ### For ProtoGen X3.4 Photorealism:
 ```
@@ -105,7 +105,7 @@ Width/Height: 1024x1024 or 832x1216
 CFG Scale: 6-8
 ```
 
-## �🆘 Support & Troubleshooting
+## 🆘 Support & Troubleshooting
 
 1. **Run diagnostics**: `SD_SYSTEM_CHECK.bat`
 2. **Check documentation**: [AMD_COMPLETE_GUIDE.md](AMD_COMPLETE_GUIDE.md)
