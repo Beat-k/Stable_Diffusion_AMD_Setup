@@ -1,0 +1,173 @@
+Starting launch at Sun 10/19/2025 19:47:46.68 
+Current directory: "C:\Documents\Stable Diffusion\stable-diffusion-webui-master\stable-diffusion-webui-master" 
+Using LORA_INFO: "sdxl_lightning_2step_lora for 2-3 steps" 
+Found Python at: "C:\Documents\Stable Diffusion\stable-diffusion-webui-master\stable-diffusion-webui-master\venv\Scripts\python.exe" 
+Running launch.py with DirectML settings... 
+fatal: No names found, cannot describe anything.
+C:\Documents\Stable Diffusion\stable-diffusion-webui-master\stable-diffusion-webui-master\venv\lib\site-packages\timm\models\layers\__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+C:\Documents\Stable Diffusion\stable-diffusion-webui-master\stable-diffusion-webui-master\venv\lib\site-packages\pytorch_lightning\utilities\distributed.py:258: LightningDeprecationWarning: `pytorch_lightning.utilities.distributed.rank_zero_only` has been deprecated in v1.8.1 and will be removed in v2.0.0. You can import it from `pytorch_lightning.utilities` instead.
+  rank_zero_deprecation(
+Python 3.10.6 (tags/v3.10.6:9c7b4bd, Aug  1 2022, 21:53:49) [MSC v.1932 64 bit (AMD64)]
+Version: 1.10.1
+Commit hash: ea3a2ad8ffe8bb1341808866be093ecba2644045
+Launching Web UI with arguments: --skip-torch-cuda-test --skip-version-check --precision full --no-half --medvram-sdxl --opt-sdp-attention --upcast-sampling --no-half-vae --theme dark --skip-torch-cuda-test --precision full --no-half --medvram
+no module 'xformers'. Processing without...
+no module 'xformers'. Processing without...
+No module 'xformers'. Proceeding without it.
+[DirectML] Using DirectML device: privateuseone:0
+[DirectML] AMD GPU acceleration enabled
+Warning: caught exception 'Torch not compiled with CUDA enabled', memory monitor disabled
+DirectML device: privateuseone:0
+DirectML memory reporting not available: module 'torch_directml' has no attribute 'total_memory'
+Attempting to allocate 8GB tensor...
+8GB allocation succeeded.
+Token saved in config: True
+Authenticated as: jaxxon7
+Loading weights [7440042bbd] from C:\Documents\Stable Diffusion\stable-diffusion-webui-master\stable-diffusion-webui-master\models\Stable-diffusion\sd_xl_refiner_1.0.safetensors
+C:\Documents\Stable Diffusion\stable-diffusion-webui-master\stable-diffusion-webui-master\modules\safe.py:156: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  return unsafe_torch_load(filename, *args, **kwargs)
+Creating model from config: C:\Documents\Stable Diffusion\stable-diffusion-webui-master\stable-diffusion-webui-master\repositories\generative-models\configs\inference\sd_xl_refiner.yaml
+Running on local URL:  http://127.0.0.1:7860
+
+To create a public link, set `share=True` in `launch()`.
+Startup time: 9.5s (prepare environment: 0.3s, import torch: 1.6s, import directml: 5.2s, other imports: 0.3s, load scripts: 1.1s, initialize extra networks: 0.1s, create ui: 0.4s, gradio launch: 0.4s).
+Applying attention optimization: sdp... done.
+Model loaded in 5.4s (load weights from disk: 0.6s, create model: 0.3s, apply weights to model: 2.2s, apply float(): 0.8s, calculate empty prompt: 1.5s).
+  0%|          | 0/20 [00:00<?, ?it/s]
+Total progress:   0%|          | 0/20 [00:00<?, ?it/s][A  5%|5         | 1/20 [00:05<01:37,  5.14s/it]
+Total progress:  10%|#         | 2/20 [00:00<00:07,  2.35it/s][A 10%|#         | 2/20 [00:05<00:47,  2.62s/it]
+Total progress:  15%|#5        | 3/20 [00:01<00:10,  1.68it/s][A 15%|#5        | 3/20 [00:06<00:30,  1.80s/it]
+Total progress:  20%|##        | 4/20 [00:02<00:11,  1.37it/s][A 20%|##        | 4/20 [00:07<00:23,  1.47s/it]
+Total progress:  25%|##5       | 5/20 [00:03<00:12,  1.23it/s][A 25%|##5       | 5/20 [00:08<00:19,  1.29s/it]
+Total progress:  30%|###       | 6/20 [00:04<00:12,  1.13it/s][A 30%|###       | 6/20 [00:09<00:16,  1.20s/it]
+Total progress:  35%|###5      | 7/20 [00:05<00:11,  1.14it/s][A 35%|###5      | 7/20 [00:10<00:14,  1.09s/it]
+Total progress:  40%|####      | 8/20 [00:06<00:10,  1.15it/s][A 40%|####      | 8/20 [00:11<00:12,  1.02s/it]
+Total progress:  45%|####5     | 9/20 [00:07<00:09,  1.10it/s][A 45%|####5     | 9/20 [00:12<00:11,  1.01s/it]
+Total progress:  50%|#####     | 10/20 [00:08<00:09,  1.03it/s][A 50%|#####     | 10/20 [00:13<00:10,  1.04s/it]
+Total progress:  55%|#####5    | 11/20 [00:09<00:08,  1.03it/s][A 55%|#####5    | 11/20 [00:14<00:09,  1.02s/it]
+Total progress:  60%|######    | 12/20 [00:10<00:08,  1.01s/it][A 60%|######    | 12/20 [00:15<00:08,  1.04s/it]
+Total progress:  65%|######5   | 13/20 [00:11<00:06,  1.07it/s][A 65%|######5   | 13/20 [00:16<00:06,  1.05it/s]
+Total progress:  70%|#######   | 14/20 [00:12<00:05,  1.06it/s][A 70%|#######   | 14/20 [00:17<00:05,  1.04it/s]
+Total progress:  75%|#######5  | 15/20 [00:13<00:04,  1.08it/s][A 75%|#######5  | 15/20 [00:18<00:04,  1.06it/s]
+Total progress:  80%|########  | 16/20 [00:14<00:03,  1.05it/s][A 80%|########  | 16/20 [00:19<00:03,  1.04it/s]
+Total progress:  85%|########5 | 17/20 [00:15<00:02,  1.07it/s][A 85%|########5 | 17/20 [00:20<00:02,  1.06it/s]
+Total progress:  90%|######### | 18/20 [00:15<00:01,  1.08it/s][A 90%|######### | 18/20 [00:21<00:01,  1.07it/s]
+Total progress:  95%|#########5| 19/20 [00:16<00:00,  1.09it/s][A 95%|#########5| 19/20 [00:21<00:00,  1.09it/s]
+Total progress: 100%|##########| 20/20 [00:17<00:00,  1.08it/s][A100%|##########| 20/20 [00:22<00:00,  1.08it/s]100%|##########| 20/20 [00:22<00:00,  1.15s/it]
+
+Total progress: 100%|##########| 20/20 [00:21<00:00,  1.08it/s][ATotal progress: 100%|##########| 20/20 [00:21<00:00,  1.09s/it]C:\Documents\Stable Diffusion\stable-diffusion-webui-master\stable-diffusion-webui-master\venv\lib\site-packages\huggingface_hub\file_download.py:945: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+
+Reusing loaded model sd_xl_refiner_1.0.safetensors [7440042bbd] to load sd_xl_base_1.0.safetensors [31e35c80fc]
+Loading weights [31e35c80fc] from C:\Documents\Stable Diffusion\stable-diffusion-webui-master\stable-diffusion-webui-master\models\Stable-diffusion\sd_xl_base_1.0.safetensors
+Creating model from config: C:\Documents\Stable Diffusion\stable-diffusion-webui-master\stable-diffusion-webui-master\repositories\generative-models\configs\inference\sd_xl_base.yaml
+Applying attention optimization: sdp... done.
+Model loaded in 5.8s (create model: 0.4s, apply weights to model: 4.0s, apply float(): 0.9s, calculate empty prompt: 0.3s).
+  0%|          | 0/20 [00:00<?, ?it/s]
+Total progress:   0%|          | 0/20 [00:00<?, ?it/s][A  5%|5         | 1/20 [00:02<00:54,  2.89s/it]
+Total progress:  10%|#         | 2/20 [00:01<00:09,  1.93it/s][A 10%|#         | 2/20 [00:03<00:32,  1.80s/it]
+Total progress:  15%|#5        | 3/20 [00:02<00:12,  1.40it/s][A 15%|#5        | 3/20 [00:04<00:24,  1.43s/it]
+Total progress:  20%|##        | 4/20 [00:03<00:13,  1.21it/s][A 20%|##        | 4/20 [00:05<00:20,  1.26s/it]
+Total progress:  25%|##5       | 5/20 [00:04<00:13,  1.11it/s][A 25%|##5       | 5/20 [00:06<00:17,  1.19s/it]
+Total progress:  30%|###       | 6/20 [00:05<00:13,  1.05it/s][A 30%|###       | 6/20 [00:08<00:16,  1.15s/it]
+Total progress:  35%|###5      | 7/20 [00:06<00:12,  1.02it/s][A 35%|###5      | 7/20 [00:09<00:14,  1.11s/it]
+Total progress:  40%|####      | 8/20 [00:07<00:12,  1.01s/it][A 40%|####      | 8/20 [00:10<00:13,  1.09s/it]
+Total progress:  45%|####5     | 9/20 [00:08<00:11,  1.02s/it][A 45%|####5     | 9/20 [00:11<00:11,  1.08s/it]
+Total progress:  50%|#####     | 10/20 [00:09<00:10,  1.04s/it][A 50%|#####     | 10/20 [00:12<00:10,  1.08s/it]
+Total progress:  55%|#####5    | 11/20 [00:10<00:09,  1.04s/it][A 55%|#####5    | 11/20 [00:13<00:09,  1.07s/it]
+Total progress:  60%|######    | 12/20 [00:11<00:08,  1.07s/it][A 60%|######    | 12/20 [00:14<00:08,  1.09s/it]
+Total progress:  65%|######5   | 13/20 [00:12<00:07,  1.05s/it][A 65%|######5   | 13/20 [00:15<00:07,  1.06s/it]
+Total progress:  70%|#######   | 14/20 [00:13<00:06,  1.04s/it][A 70%|#######   | 14/20 [00:16<00:06,  1.05s/it]
+Total progress:  75%|#######5  | 15/20 [00:14<00:05,  1.04s/it][A 75%|#######5  | 15/20 [00:17<00:05,  1.05s/it]
+Total progress:  80%|########  | 16/20 [00:15<00:04,  1.04s/it][A 80%|########  | 16/20 [00:18<00:04,  1.05s/it]
+Total progress:  85%|########5 | 17/20 [00:16<00:03,  1.05s/it][A 85%|########5 | 17/20 [00:19<00:03,  1.05s/it]
+Total progress:  90%|######### | 18/20 [00:17<00:02,  1.05s/it][A 90%|######### | 18/20 [00:20<00:02,  1.05s/it]
+Total progress:  95%|#########5| 19/20 [00:18<00:01,  1.05s/it][A 95%|#########5| 19/20 [00:21<00:01,  1.05s/it]
+Total progress: 100%|##########| 20/20 [00:19<00:00,  1.05s/it][A100%|##########| 20/20 [00:22<00:00,  1.05s/it]100%|##########| 20/20 [00:22<00:00,  1.14s/it]
+
+Total progress: 100%|##########| 20/20 [00:25<00:00,  1.05s/it][ATotal progress: 100%|##########| 20/20 [00:25<00:00,  1.26s/it]Running launch.py with DirectML settings... 
+fatal: No names found, cannot describe anything.
+C:\Documents\Stable Diffusion\stable-diffusion-webui-master\stable-diffusion-webui-master\venv\lib\site-packages\timm\models\layers\__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+C:\Documents\Stable Diffusion\stable-diffusion-webui-master\stable-diffusion-webui-master\venv\lib\site-packages\pytorch_lightning\utilities\distributed.py:258: LightningDeprecationWarning: `pytorch_lightning.utilities.distributed.rank_zero_only` has been deprecated in v1.8.1 and will be removed in v2.0.0. You can import it from `pytorch_lightning.utilities` instead.
+  rank_zero_deprecation(
+Python 3.10.6 (tags/v3.10.6:9c7b4bd, Aug  1 2022, 21:53:49) [MSC v.1932 64 bit (AMD64)]
+Version: 1.10.1
+Commit hash: ea3a2ad8ffe8bb1341808866be093ecba2644045
+Launching Web UI with arguments: --skip-torch-cuda-test --skip-version-check --precision full --no-half --medvram-sdxl --opt-sdp-attention --upcast-sampling --no-half-vae --theme dark
+no module 'xformers'. Processing without...
+no module 'xformers'. Processing without...
+No module 'xformers'. Proceeding without it.
+[DirectML] Using DirectML device: privateuseone:0
+[DirectML] AMD GPU acceleration enabled
+Warning: caught exception 'Torch not compiled with CUDA enabled', memory monitor disabled
+DirectML device: privateuseone:0
+DirectML memory reporting not available: module 'torch_directml' has no attribute 'total_memory'
+Attempting to allocate 8GB tensor...
+8GB allocation succeeded.
+Token saved in config: True
+Authenticated as: jaxxon7
+Loading weights [31e35c80fc] from C:\Documents\Stable Diffusion\stable-diffusion-webui-master\stable-diffusion-webui-master\models\Stable-diffusion\sd_xl_base_1.0.safetensors
+C:\Documents\Stable Diffusion\stable-diffusion-webui-master\stable-diffusion-webui-master\venv\lib\site-packages\huggingface_hub\file_download.py:945: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+C:\Documents\Stable Diffusion\stable-diffusion-webui-master\stable-diffusion-webui-master\modules\safe.py:156: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  return unsafe_torch_load(filename, *args, **kwargs)
+Running on local URL:  http://127.0.0.1:7860
+
+To create a public link, set `share=True` in `launch()`.
+Creating model from config: C:\Documents\Stable Diffusion\stable-diffusion-webui-master\stable-diffusion-webui-master\repositories\generative-models\configs\inference\sd_xl_base.yaml
+Startup time: 9.9s (prepare environment: 0.3s, import torch: 1.5s, import directml: 5.3s, other imports: 0.4s, load scripts: 1.2s, initialize extra networks: 0.2s, create ui: 0.4s, gradio launch: 0.6s).
+Applying attention optimization: sdp... done.
+Model loaded in 11.6s (load weights from disk: 0.7s, create model: 1.1s, apply weights to model: 7.4s, apply float(): 1.0s, calculate empty prompt: 1.3s).
+  0%|          | 0/20 [00:00<?, ?it/s]
+Total progress:   0%|          | 0/20 [00:00<?, ?it/s][A  5%|5         | 1/20 [00:06<01:55,  6.10s/it]
+Total progress:  10%|#         | 2/20 [00:01<00:09,  1.96it/s][A 10%|#         | 2/20 [00:07<00:56,  3.11s/it]
+Total progress:  15%|#5        | 3/20 [00:01<00:11,  1.46it/s][A 15%|#5        | 3/20 [00:08<00:36,  2.12s/it]
+Total progress:  20%|##        | 4/20 [00:02<00:12,  1.23it/s][A 20%|##        | 4/20 [00:09<00:26,  1.68s/it]
+Total progress:  25%|##5       | 5/20 [00:03<00:13,  1.13it/s][A 25%|##5       | 5/20 [00:10<00:21,  1.44s/it]
+Total progress:  30%|###       | 6/20 [00:05<00:13,  1.07it/s][A 30%|###       | 6/20 [00:11<00:18,  1.31s/it]
+Total progress:  35%|###5      | 7/20 [00:06<00:12,  1.02it/s][A 35%|###5      | 7/20 [00:12<00:15,  1.23s/it]
+Total progress:  40%|####      | 8/20 [00:07<00:12,  1.01s/it][A 40%|####      | 8/20 [00:13<00:14,  1.18s/it]
+Total progress:  45%|####5     | 9/20 [00:08<00:11,  1.03s/it][A 45%|####5     | 9/20 [00:14<00:12,  1.15s/it]
+Total progress:  50%|#####     | 10/20 [00:09<00:10,  1.05s/it][A 50%|#####     | 10/20 [00:15<00:11,  1.13s/it]
+Total progress:  55%|#####5    | 11/20 [00:10<00:09,  1.04s/it][A 55%|#####5    | 11/20 [00:16<00:09,  1.10s/it]
+Total progress:  60%|######    | 12/20 [00:11<00:08,  1.06s/it][A 60%|######    | 12/20 [00:17<00:08,  1.10s/it]
+Total progress:  65%|######5   | 13/20 [00:12<00:07,  1.03s/it][A 65%|######5   | 13/20 [00:18<00:07,  1.06s/it]
+Total progress:  70%|#######   | 14/20 [00:13<00:06,  1.04s/it][A 70%|#######   | 14/20 [00:19<00:06,  1.06s/it]
+Total progress:  75%|#######5  | 15/20 [00:14<00:05,  1.03s/it][A 75%|#######5  | 15/20 [00:20<00:05,  1.05s/it]
+Total progress:  80%|########  | 16/20 [00:15<00:04,  1.04s/it][A 80%|########  | 16/20 [00:21<00:04,  1.05s/it]
+Total progress:  85%|########5 | 17/20 [00:16<00:03,  1.04s/it][A 85%|########5 | 17/20 [00:22<00:03,  1.05s/it]
+Total progress:  90%|######### | 18/20 [00:17<00:02,  1.03s/it][A 90%|######### | 18/20 [00:23<00:02,  1.04s/it]
+Total progress:  95%|#########5| 19/20 [00:18<00:01,  1.03s/it][A 95%|#########5| 19/20 [00:24<00:01,  1.03s/it]
+Total progress: 100%|##########| 20/20 [00:19<00:00,  1.03s/it][A100%|##########| 20/20 [00:25<00:00,  1.04s/it]100%|##########| 20/20 [00:25<00:00,  1.29s/it]
+
+Total progress: 100%|##########| 20/20 [00:24<00:00,  1.03s/it][ATotal progress: 100%|##########| 20/20 [00:24<00:00,  1.23s/it]
+Reusing loaded model sd_xl_base_1.0.safetensors [31e35c80fc] to load sd_xl_refiner_1.0.safetensors [7440042bbd]
+Loading weights [7440042bbd] from C:\Documents\Stable Diffusion\stable-diffusion-webui-master\stable-diffusion-webui-master\models\Stable-diffusion\sd_xl_refiner_1.0.safetensors
+Creating model from config: C:\Documents\Stable Diffusion\stable-diffusion-webui-master\stable-diffusion-webui-master\repositories\generative-models\configs\inference\sd_xl_refiner.yaml
+Applying attention optimization: sdp... done.
+Model loaded in 3.7s (create model: 0.1s, apply weights to model: 1.9s, apply float(): 1.3s, calculate empty prompt: 0.3s).
+  0%|          | 0/20 [00:00<?, ?it/s]
+Total progress:   0%|          | 0/20 [00:00<?, ?it/s][A  5%|5         | 1/20 [00:02<00:44,  2.33s/it]
+Total progress:  10%|#         | 2/20 [00:00<00:06,  2.57it/s][A 10%|#         | 2/20 [00:03<00:25,  1.42s/it]
+Total progress:  15%|#5        | 3/20 [00:01<00:07,  2.13it/s][A 15%|#5        | 3/20 [00:03<00:17,  1.04s/it]
+Total progress:  20%|##        | 4/20 [00:02<00:09,  1.74it/s][A 20%|##        | 4/20 [00:04<00:14,  1.08it/s]
+Total progress:  25%|##5       | 5/20 [00:02<00:09,  1.56it/s][A 25%|##5       | 5/20 [00:05<00:13,  1.15it/s]
+Total progress:  30%|###       | 6/20 [00:03<00:09,  1.45it/s][A 30%|###       | 6/20 [00:05<00:11,  1.19it/s]
+Total progress:  35%|###5      | 7/20 [00:04<00:09,  1.41it/s][A 35%|###5      | 7/20 [00:06<00:10,  1.23it/s]
+Total progress:  40%|####      | 8/20 [00:05<00:08,  1.37it/s][A 40%|####      | 8/20 [00:07<00:09,  1.25it/s]
+Total progress:  45%|####5     | 9/20 [00:05<00:08,  1.35it/s][A 45%|####5     | 9/20 [00:08<00:08,  1.27it/s]
+Total progress:  50%|#####     | 10/20 [00:06<00:07,  1.34it/s][A 50%|#####     | 10/20 [00:09<00:07,  1.29it/s]
+Total progress:  55%|#####5    | 11/20 [00:07<00:06,  1.33it/s][A 55%|#####5    | 11/20 [00:09<00:06,  1.29it/s]
+Total progress:  60%|######    | 12/20 [00:08<00:06,  1.25it/s][A 60%|######    | 12/20 [00:10<00:06,  1.23it/s]
+Total progress:  65%|######5   | 13/20 [00:08<00:05,  1.36it/s][A 65%|######5   | 13/20 [00:11<00:05,  1.34it/s]
+Total progress:  70%|#######   | 14/20 [00:09<00:04,  1.34it/s][A 70%|#######   | 14/20 [00:12<00:04,  1.32it/s]
+Total progress:  75%|#######5  | 15/20 [00:10<00:03,  1.33it/s][A 75%|#######5  | 15/20 [00:12<00:03,  1.32it/s]
+Total progress:  80%|########  | 16/20 [00:11<00:03,  1.33it/s][A 80%|########  | 16/20 [00:13<00:03,  1.32it/s]
+Total progress:  85%|########5 | 17/20 [00:12<00:02,  1.32it/s][A 85%|########5 | 17/20 [00:14<00:02,  1.31it/s]
+Total progress:  90%|######### | 18/20 [00:12<00:01,  1.32it/s][A 90%|######### | 18/20 [00:15<00:01,  1.32it/s]
+Total progress:  95%|#########5| 19/20 [00:13<00:00,  1.32it/s][A 95%|#########5| 19/20 [00:15<00:00,  1.32it/s]
+Total progress: 100%|##########| 20/20 [00:14<00:00,  1.32it/s][A100%|##########| 20/20 [00:16<00:00,  1.32it/s]100%|##########| 20/20 [00:16<00:00,  1.20it/s]
+
+Total progress: 100%|##########| 20/20 [00:18<00:00,  1.32it/s][ATotal progress: 100%|##########| 20/20 [00:18<00:00,  1.11it/s]

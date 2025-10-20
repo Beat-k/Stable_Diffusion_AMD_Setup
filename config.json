@@ -1,0 +1,20 @@
+{
+    "ldsr_steps": 100,
+    "ldsr_cached": false,
+    "SCUNET_tile": 256,
+    "SCUNET_tile_overlap": 8,
+    "SWIN_tile": 192,
+    "SWIN_tile_overlap": 8,
+    "SWIN_torch_compile": false,
+    "hypertile_enable_unet": false,
+    "hypertile_enable_unet_secondpass": false,
+    "hypertile_max_depth_unet": 3,
+    "hypertile_max_tile_unet": 256,
+    "hypertile_swap_size_unet": 3,
+    "hypertile_enable_vae": false,
+    "hypertile_max_depth_vae": 3,
+    "hypertile_max_tile_vae": 128,
+    "hypertile_swap_size_vae": 3,
+    "sd_model_checkpoint": "sd_xl_refiner_1.0.safetensors [7440042bbd]",
+    "sd_checkpoint_hash": "7440042bbdc8a24813002c09b6b69b64dc90fded4472613437b7f55f9b7d9c5f"
+}
