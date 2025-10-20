@@ -15,7 +15,7 @@ echo.
 set PYTORCH_DIRECTML=1
 set TORCH_DIRECTML_DEVICE=0
 
-:: AMD-optimized command line arguments (removed --directml as it's not supported)
+:: AMD-optimized command line arguments for DirectML compatibility
 set COMMANDLINE_ARGS=--skip-torch-cuda-test --skip-version-check --precision full --no-half --medvram --opt-sdp-attention --upcast-sampling --no-half-vae
 
 echo Environment: DirectML enabled
