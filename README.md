@@ -30,3 +30,5 @@ See `AMD_COMPLETE_GUIDE.md` for detailed setup instructions, troubleshooting, an
 ---
 
 *AMD GPU Optimized • DirectML Enabled • Ready to Generate*
+
+**(© 2025 Jeremy F. Jackson. All Rights Reserved. Beat⊕k™ is a trademark of Jeremy F. Jackson.)**
