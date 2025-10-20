@@ -24,7 +24,10 @@ A comprehensive guide for the optimized setup of [AUTOMATIC1111's Stable Diffusi
 ## 📦 Installation
 
 1. **Install Python 3.10.x** from [python.org](https://python.org)
-2. **Clone or download** this repository
+2. **Clone or download** this repository:
+   ```bash
+   git clone https://github.com/yourusername/stable-diffusion-amd-optimized.git
+   ```
 3. **Run the installer**: `INSTALL_DIRECTML.bat`
 4. **Test your setup**: `SD_SYSTEM_CHECK.bat`
 
